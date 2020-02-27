@@ -1,0 +1,141 @@
+/* Reset css 2019 auteur NB */
+
+/* import = police d'écriture */
+@import url('https://fonts.googleapis.com/css?family=Tinos&display=swap');
+
+html > body {
+    
+    font: 18px 'Tinos', sans-serif;
+    margin:0;
+}
+
+h1,h2,h3,p,ul,ol, blockquote {
+    font-weight: 100;
+    list-style: none;
+    padding:0;
+    margin: 0;    
+}
+
+
+
+a{
+    text-decoration: none;
+    background:rgba(2, 86, 131,1.0);
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+strong, address > span {
+    color: rgba(2, 82, 126,1.0);
+}
+
+header{
+    max-width:100%;
+    background: var(--color-header);
+    box-shadow: 0 2px 10px #222;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header > h1::before{
+    content: "\002661";
+}
+
+header h1 {
+    line-height: 60px;
+    text-align: center;
+    color: #FFF;
+}
+main {
+    max-width: 900px;
+    margin: 50px auto 20px;
+}
+
+main address {
+    margin-top: 10px;
+}
+address {
+    font-style: normal;
+}
+
+/* thème */
+/* variables css */
+:root{
+    --color-default: #ccc;
+    --color-primary: rgba(17, 170, 253,1.0);
+    --color-blue: rgba(1, 87, 155,1.0);
+    --color-background: rgba(225, 245, 254,1.0);
+    --color-header: rgba(2, 86, 131,1.0);
+}
+
+section, blockquote, address, details {
+    /*border: solid 1px;*/
+    margin: 20px 0;
+    padding: 10px;
+    background: var(--color-background);
+}
+
+
+/* Pour enlever l'interligne en dessous de l'image */
+main section > img {
+    display: block;
+    width: 100%;
+    border: dotted 1px red;
+}
+
+table {
+    width: 100%;
+}
+li {
+    margin: 1px;
+    padding:5px;
+}
+
+li:nth-child(odd){
+    background: var(--color-primary);
+    color: black;
+}
+li:nth-child(even){
+    background: var(--color-blue);
+    color: white;
+}
+
+/* arrière-plan de l'image */
+html {
+    background: url(../images/background.jpg) no-repeat fixed center center / cover;
+}
+
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+details > summary > span {
+    color: black;
+}
+
+details > summary {
+    color: var(--color-blue);
+}
+
+
+footer summary {
+    outline: none;
+}
+
+details > summary::-webkit-details-marker {
+    color: var(--color-blue);
+}
+
+footer > p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+

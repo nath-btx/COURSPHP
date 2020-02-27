@@ -1,0 +1,92 @@
+/*
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif; /* 16px 62.5% => 1.000*/
+    /*
+    margin: 0;
+}
+h1,h2,h3,h4,ul,ol,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #222;
+}
+header h1{
+    text-align: center;
+    line-height: 6.5rem;
+    color: #fff;
+}
+p, ul, ol{
+    max-width: 80rem;
+    line-height: 2.6rem;
+    margin: 2.0rem auto 0;
+    background: #fafafa;
+    border: solid 0.1rem #ccc;
+    padding: 1.0rem;
+    
+}
+
+ul li:nth-child(2n+1){
+    background: #222;
+    color: #fff;
+    padding: 0.5rem;
+}
+*/
+
+/* Reset */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,ol,ul,p{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme */
+header{
+    background-color: #222;
+}
+header > h1{
+    text-align: center;
+    color: #FFF;
+    line-height: 6.5rem;
+}
+main p, footer, ul{
+    max-width: 80rem;
+    padding: 1.0rem;
+    background: #fafafa;
+    border: solid 0.1rem transparent;
+    box-shadow: 0 0 0.1rem #222;
+    line-height: 2.5rem;
+    margin: 5.0rem auto;
+}
+
+main ul > li:nth-child(2n+1){
+    background: #456;
+    color: #fff;
+}
+main ul >li{
+    padding: 0.7rem;
+}
+footer{
+    line-height: normal;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: 16px 'Open Sans', sans-serif; /* root de la taille -> le rem s'ajuste en fonction de la racine */
+    margin:0;              /* diviser px / 16 (root) pour avoir en rem */
+    background: #EEE;
+}
+
+h1,h2,h3,p,ol{
+    font-weight: 100;
+    margin: 0; 
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+main, header, footer, nav{
+    max-width: 800px;
+    margin: 0 auto 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav h2, section h2 {
+    box-shadow: 0 3px 0 #ccc;
+    background: rgba(255,255,255,0.7);
+    padding: 5px;
+    line-height: 45px;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+section p {
+    line-height: 1.5rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section p > img {
+    display: block;
+    width: 100px;
+}
+
+section > .bookmark{
+transition-duration: 0.8s;
+}
+
+header > h1 {
+    line-height: 60px;
+}
+
+nav ol {
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+
+
+section h2::before{
+    content:'\f17b';
+    font-family: 'Font Awesome 5 brands';
+    margin-right: 5px;
+}
+
+.bookmark:target { /* Target pour désigner celui qu'on clique */
+    background: rgba(200,0,0,0.7);
+    color: #fafafa;
+}
+
+section .background {
+    background: url(../images/ville.jpg) no-repeat fixed center center / cover;
+    min-height: 300px;
+}
+
+
+nav > h2::before{
+    content:'\f26e';
+    font-family: 'Font Awesome 5 brands';
+}
+
+footer {
+    text-align: center;
+}
+
+

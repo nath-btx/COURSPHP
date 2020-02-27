@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Zhi+Mang+Xing&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family:'Open Sans', sans-serif;
+    margin:0px;
+}
+html {
+    background: url(../asset/background.png) no-repeat fixed center -100px / cover;
+
+}
+
+
+h1, h2{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+/* root */
+:root{
+    --color-default: #222;
+    --color-blue: rgba(20, 78, 123,0.9);
+    --color-background: rgba(251, 251, 251,0.9);
+    --color-failure: rgba(166, 32, 18,0.9);
+    --color-boxshadow: rgba(41, 128, 185,1.0);
+}
+
+h1,h2,h3,p,ol,section{
+    font-weight: 100;
+    margin: 0; 
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 850px;
+    margin: 0 auto 0;
+    background: var(--color-background);
+    box-shadow: 0 0 10px var(--color-default);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    background: var(--color-blue);
+    color: #fff;
+    padding: 5px 10px 5px 15px;
+    margin: 0 10px 0 10px;
+}
+h1{
+    color:#000;
+}
+ol {
+    line-height: 30px;
+    padding: 20px 0px 20px 40px;
+}
+header {
+    line-height: 90px;
+}
+
+footer, header {
+    text-align: center;
+}
+
+section p{
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 30px 15px 30px 10px
+}
+
+
+nav h2, section h2 {
+    box-shadow: 0 3px 0 var(--color-boxshadow);
+    padding: 5px;
+    line-height: 45px;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.bookmark:target { /* Target pour désigner celui qu'on clique */
+    background: var(--color-failure);
+    box-shadow: 0 3px 0 var(--color-failure);
+
+}
+
+img {
+    display: block;
+    max-width: 850px;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+h1::before{
+    content : "\002605";
+    color: var(--color-failure);
+}

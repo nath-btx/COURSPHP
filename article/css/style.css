@@ -1,0 +1,122 @@
+/* Reset */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,ol,ul,p,li{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --theme_1:#e2ecf7;
+    --theme_2:#c5d8ef;
+    --theme_3:#a9c5e7;
+    --theme_4:#316cb3;
+    --black:rgb(45, 52, 54);
+    --white:rgb(223, 230, 233);
+    --success: rgb(39, 174, 96);
+    --warning: rgb(200,0,0);
+}
+a,summary{
+    outline:0;
+}
+textarea{
+    resize:none;
+}
+/* theme */
+
+header  h1{
+    text-align: center;
+    line-height: 6.5rem;
+    background: var(--black);
+    color: var(--white);
+
+}
+section{
+    max-width: 90rem;
+    margin: 5.0rem auto;
+    padding: 1.0rem;
+}
+section form input, section form textarea, section form label {
+    display: block;
+    line-height: 3.5rem;
+    padding: 0.5rem;
+    border: solid 1px #222;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    transition-duration: 0.9s;
+}
+section form label{
+    border: 0;
+}
+section form input[type="text"]:focus{
+    background: var(--black);
+    color: var(--white);
+}
+section form input[type="submit"]{
+    background: var(--success);
+    border: 0;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer; 
+}
+.warning,.success {
+    max-width: 40rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    color: var(--white);
+    background: var(--warning);
+    padding: 1rem;
+}
+.success {
+    background: var(--success);
+}
+
+/* Pour les posts */
+
+main{
+    max-width: 80rem;
+    margin: 5.0rem auto;
+    padding: 1.0rem;
+}
+article{
+    background:#fafafa;
+    margin-bottom: 0.5rem;
+    padding: 1.0rem;
+}
+article h2{
+    background: rgb(36,116,219);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 0.5rem;
+    color:#fafafa;
+}
+article p{
+    line-height:1.5rem;
+}
+article time{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background: #f1c40f;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    line-height: 6.5rem;
+    margin-top: 30rem;
+}

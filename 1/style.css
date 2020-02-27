@@ -1,0 +1,110 @@
+/* Reset css 2019 auteur NB */
+
+html > body {
+    font: 16px sans-serif;
+    margin:0;
+}
+
+h1,h2,h3,p,ul,ol {
+    font-weight: 100;
+    margin:0;
+}
+
+/* variables */
+:root{
+    --color-default: #ccc;
+    --color-primary: rgba(44, 62, 80,1.0);
+    --color-warning: rgba(192,57,43,1.0);
+    --color-success: rgba(22, 160, 96,1.0);
+    --color-header: rgba(99, 110, 114,1.0)
+}
+
+header {
+    background: var(--color-header);
+}
+header > h1 > sup{
+    color: var(--color-warning);/* appel de la variable */
+}
+
+header > h1{
+    text-align: center;
+    line-height: 60px;
+    /*background: #fafafa;*/
+}
+
+main, footer{
+    max-width: 800px;
+    margin: 35px auto;
+    /*border: solid 1px var(--color-default);*/
+    padding: 10px;
+    background: #fafafa;
+}
+
+section > h2{
+    color: rgb(255,255,255);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+section{
+    margin: 10px 0;
+}
+section:first-child{ /* cibler le 1er élément */
+    background: var(--color-primary);
+}
+
+section:first-child > h2::after{
+    content:"\002605 \002605";
+    color: rgba(241, 196, 15,1.0);
+    margin-left: 10px;
+}
+
+section:nth-of-type(2){ /* cibler le 2ème élément */
+    background: var(--color-warning);
+}
+
+section:nth-of-type(2) > h2::after{
+    content:"\002605 \002605 \002605";
+    color: rgba(241, 196, 15,1.0);
+    margin-left: 10px;
+}
+
+
+section:nth-of-type(3){ /* cibler le 3ème élément */
+    background: var(--color-default);
+}
+section:nth-of-type(3) * {
+    color: #222;
+}
+
+section:nth-of-type(3) > h2::after{
+    content:"\002605 \002605 \002605";
+    color: rgba(241, 196, 15,1.0);
+    margin-left: 10px;
+}
+
+section:last-child{ /* cibler le dernier élément */
+    background: var(--color-success);
+    margin: 0;
+}
+
+section:last-child > h2::after{
+    content:"\002605 \002605 \002605 \002605";
+    color: rgba(241, 196, 15,1.0);
+    margin-left: 10px;
+}
+
+footer{
+    margin:0 auto;
+}
+footer *{
+    text-align: center;
+}
+
+h1::after {
+    content : "\002606";
+    vertical-align: middle;
+    margin-right: 10px;
+}
+

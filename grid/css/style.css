@@ -1,0 +1,82 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+html, body {
+    font-family: 16px 'Open Sans', sans-serif; /* root de la taille -> le rem s'ajuste en fonction de la racine */
+    margin:0;              /* diviser px / 16 (root) pour avoir en rem */
+    background: #EEE;
+}
+
+h1,h2,h3,p,ol,ul{
+    font-weight: 100;
+    margin: 0; 
+    padding: 0;
+    list-style-type: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header h1{
+    line-height: 60px;
+    text-align: center;
+}
+
+header h1::before{
+    content:'\f17b';
+    font-family: 'Font Awesome 5 brands';
+    margin-right: 5px;
+    color: #16a085;
+}
+
+main, footer{
+    max-width: 800px;
+    margin: 50px auto 10px;
+    border: solid 1px black;
+    /*overflow: hidden;*/
+    display: table;
+    background: #fff;
+}
+main ul {
+    padding: 1px 0 0 1px;
+    background: #fafafa;
+}
+
+ul li img {
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition-duration: 2.5s;
+}
+
+ul li:hover img{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px #222;
+}
+ul li {
+    width: calc(100% / 4 - 1px);
+    float: left;
+    margin: 0 1px 1px 0;
+    filter: blur(1px);
+    filter: grayscale(80%);
+}
+
+ul li:nth-child(6), ul li:nth-child(5){
+    width: calc(100% / 2 - 1px);
+}
+
+ul li:nth-child(7), ul li:nth-child(8), ul li:nth-child(9) {
+    width: calc(100%/3 - 1px);
+}
+
+ul li:hover{
+    filter: blur(0px);
+    transition: 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+footer{
+    overflow: none;
+}
