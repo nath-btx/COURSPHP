@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: 16px 'Open Sans', sans-serif; /* root de la taille -> le rem s'ajuste en fonction de la racine */
+    margin:0;              /* diviser px / 16 (root) pour avoir en rem */
+    background: #EEE;
+}
+
+h1,h2,h3,p,ol,ul{
+    font-weight: 120;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+main, header, footer, nav, p{
+    max-width: 800px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+ul {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+a:hover, a:active {
+    background-color: hotpink;
+}
+
+li {
+    padding: 4px;
+}
+
