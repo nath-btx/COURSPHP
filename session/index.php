@@ -51,13 +51,12 @@ const title = "Session";
         <form action="index.php" method = "post">
             <ul>
                 <li> <h2> <label for ="nom"> Informations sur vous </label> </h2> </li>
-                <li> <input type="text" id = "nom" name="nom" placeholder="Nom"> </li>
                 <li> <input type="text" name="prenom" placeholder="Prénom"> </li>
+                <li> <input type="text" id = "nom" name="nom" placeholder="Nom"> </li>
                 <li> <input type="text" name="age" placeholder="Age"> </li>
                 <li> <input class="button" type="submit" value="Valider"> </li>
             </ul>
         </form>
-                
     </section>
     <p> <a href="./pages/fin_session.php"> Terminer la session </a>
     
