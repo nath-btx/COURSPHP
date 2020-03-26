@@ -10,10 +10,10 @@ catch(Exception $e){
 
 $req = $bdd->query('SELECT * from sorties');
     while ($donnees = $req->fetch()){
-        echo (' <figure> <img src="./'.$donnees['affiche'].'" alt="'.$donnees['titre'].'">
+        echo (' <figure> <img src="./'.$donnees['afficher'].'" alt="'.$donnees['titre'].'">
                 <figcaption> 
                 <p> <strong> Titre : </strong>'. $donnees['titre'] .'</p>
-                <p> <strong> Date de sortie : </strong>'. $donnees['realisteur'] .'</p>
+                <p> <strong> Date de sortie : </strong>'. $donnees['realisateur'] .'</p>
                 <p> <strong> Acteurs : </strong>' .$donnees['acteurs'] .'</p>
                 <p> <strong> Genre : </strong>' .$donnees['genre'] .'</p>
                 <p> <strong> Résumé du film : </strong>' .$donnees['story'] .'</p>  
