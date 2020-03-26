@@ -1,0 +1,101 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,p,ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 100;
+}
+input{
+    outline: none;
+}
+
+/* theme */
+header *{
+    text-align: center;
+}
+form,section{
+    max-width: 70rem;
+    margin: 5.0rem auto;
+    
+}
+form table{
+    
+    width: 100%;
+}
+form table,td,th{
+    border-collapse: collapse;
+    border: solid 0.1rem #999;
+    line-height: 3.5rem;
+    padding: 0.5rem;
+}
+form table thead{
+    background-color: #ccc;
+}
+form table thead th:nth-of-type(1){
+    width: 30%;
+}
+form table td input{
+    border: solid 0.1rem #ccc;
+    line-height: 2.5rem;
+    padding: .3rem;
+}
+
+form table td input[type="submit"],section p a{
+    background-color: #222;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    width: 20rem;
+    text-align: center;
+}
+tfoot{
+    text-align: center;
+}
+form table td input[type="number"]{
+    display: inline-block;
+    width: 10%;
+}
+form table td input[type="text"]{
+    width: 50%;
+    
+}
+
+section h2, section h3, section p{
+    line-height: 2.5rem;
+}
+section{
+    border: solid .1rem #ccc;
+    padding: 1.0rem;
+    background-color: #fafafa;
+}
+/* chaque partie */
+section h2,section h3{
+    background-color: #34495e;
+    color: #fafafa;
+    padding: 1.0rem;
+}
+section h3{
+    background-color: #95a5a6;
+}
+section p, section ul{
+    background-color: #fff;
+    padding: 1.0rem;
+}
+section .warning{
+    color: #e74c3c;
+    line-height: 3.5rem;
+}
